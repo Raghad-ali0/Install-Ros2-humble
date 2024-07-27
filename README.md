@@ -58,7 +58,37 @@ The should output like this:
 sudo apt update && sudo apt install curl -y
 sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
 ```
+<img width="1440" alt="‏لقطة الشاشة ١٤٤٦-٠١-٢١ في ٢ ٣١ ١١ م" src="https://github.com/user-attachments/assets/f13915e0-fddd-4ea3-bb66-d57d62efbe36">
+
 4-Then add the repository to your sources list:
 ```
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
+```
+<img width="1440" alt="‏لقطة الشاشة ١٤٤٦-٠١-٢١ في ٢ ٣٤ ٢٩ م" src="https://github.com/user-attachments/assets/d228a2dc-e5cc-4157-bfd0-edc89487b1b3">
+
+5-Update your apt repository caches 
+```
+sudo apt update
+```
+<img width="1440" alt="‏لقطة الشاشة ١٤٤٦-٠١-٢١ في ٢ ٤٣ ٣٠ م" src="https://github.com/user-attachments/assets/1f5120b3-7b6b-473b-8cb7-18f04e87eaa2">
+
+6- TO make sure tha our system is currently up to date
+```
+sudo apt upgrade
+```
+<img width="1440" alt="‏لقطة الشاشة ١٤٤٦-٠١-٢١ في ٢ ٥٠ ٤٢ م" src="https://github.com/user-attachments/assets/64289609-f400-4005-8d3e-ddb2462499a2">
+
+7-Desktop Instal
+```
+sudo apt install ros-humble-ros-base
+```
+<img width="679" alt="‏لقطة الشاشة ١٤٤٦-٠١-٢١ في ٣ ٠٠ ٢٦ م" src="https://github.com/user-attachments/assets/ea4a4ab5-891a-4b19-9895-74ed5e4b2cee">
+
+8-To run ros2 sourcing the Setup script
+```
+source /opt/ros/humble/setup.bash
+```
+9-try some examples.
+```
+ros2 run demo_nodes_cpp talker
 ```
