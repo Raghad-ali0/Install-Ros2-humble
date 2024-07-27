@@ -1,5 +1,7 @@
-##Install Ros2 humble on mac |m1
+
 Here I will install Ros2 humble in ubuntu 22.04 on Mac m1
+
+
 
 ### first install Virtual machines for Mac (UTM)
 here the link:
@@ -8,7 +10,7 @@ here the link:
 https://mac.getutm.app
 ```
 
-#### Second install Ubuntu 22.04 in the same link
+### Second install Ubuntu 22.04 in the same link
 
 1- Click on GALLERY
 <img width="1440" alt="‏لقطة الشاشة ١٤٤٦-٠١-٢١ في ١ ٤٦ ٢٥ م" src="https://github.com/user-attachments/assets/ecd26802-fcf9-467b-bf07-ceb01aa3e5dd">
@@ -27,7 +29,7 @@ https://docs.ros.org/en/humble/Installation.html
 2-Install Binary packages
 <img width="1440" alt="‏لقطة الشاشة ١٤٤٦-٠١-٢١ في ٢ ٠٣ ٤٨ م" src="https://github.com/user-attachments/assets/75396051-3c40-4653-8daf-cbc71d8afaf0">
 
-###### Open Terminal
+##### Open Terminal
 1- Use this command to Make sure you have a locale which supports UTF-8:
 
 ```
@@ -94,6 +96,7 @@ source /opt/ros/humble/setup.bash
 ros2 run demo_nodes_cpp talker
 ```
 to stop this Click on control + c
+
 <img width="518" alt="‏لقطة الشاشة ١٤٤٦-٠١-٢١ في ٣ ١٥ ٠٠ م" src="https://github.com/user-attachments/assets/436314a0-2db7-4680-8889-b71208b89476">
 
 you need tp source this setup every time when open new terminal to solve this problem 
